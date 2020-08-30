@@ -2,7 +2,6 @@
 error_reporting(0);
 define('blue',"\e[1;34m");
 define('green',"\e[1;32m");
-define('yellow',"\e[1;33m");
 define('red',"\e[1;31m");
 @system('clear');
    echo red."__  __              _   _   _        _   ____
@@ -18,7 +17,7 @@ define('red',"\e[1;31m");
    $ok = array_unique($exp);
    foreach($ok as $expl){
       if(!preg_match("/http/",$expl)){
-         $expl = yellow."http://".$expl;
+         $expl = "http://".$expl;
       }
       else{
          $expl = $expl;
